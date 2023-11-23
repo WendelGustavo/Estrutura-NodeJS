@@ -1,5 +1,4 @@
 const mysql = require('mysql2/promise');
-const config = require('../../config/default.json');
 
 async function connect() {
   if (global.connection && global.connection.state !== 'disconnected') {
@@ -7,11 +6,11 @@ async function connect() {
   }
 
   const connection = await mysql.createConnection({
-    host: "",
-    port: "",
-    user: "",
-    password: "",
-    database: "",
+    host: '',
+    port: '',
+    user: '',
+    password: '',
+    database: '',
   });
 
   global.connection = connection;
