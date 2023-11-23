@@ -1,0 +1,9 @@
+{
+	"apps": [
+			{
+					"name": "SMC",
+					"script": "npm",
+					"args": "start"
+			}
+	]
+}
