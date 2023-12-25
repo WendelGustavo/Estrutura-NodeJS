@@ -3,7 +3,7 @@
 const express = require('express');
 const cors = require('cors');
 const morgan = require('morgan');
-const authMiddleware = require('./middleware/authMiddleware');
+const authMiddleware = require('./src/middleware/authMiddleware');
 
 const app = express();
 app.use(cors());
